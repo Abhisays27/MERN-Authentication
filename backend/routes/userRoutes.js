@@ -13,7 +13,7 @@ router.post("/auth", authUser);
 router.post("/",registerUser);
 router.post("/logout", logoutUser);
 router.get("/profile",protect, getUserProfile);
-router.post("/profile", protect,updateUserProfile);
+router.put("/profile", protect,updateUserProfile);
 
 
 export default router;
